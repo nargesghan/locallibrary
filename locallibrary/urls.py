@@ -24,3 +24,7 @@ urlpatterns = [
 ]
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+
+urlpatterns+=[
+    re_path(r'^accounts/',include('django.contrib.auth.urls')),
+]

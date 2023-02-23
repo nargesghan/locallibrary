@@ -37,3 +37,7 @@ class BookDetailView(generic.ListView):
 #         'catalog/index.html',
 #         context={'num_books':num_books,'num_instances':num_instances,'num_instances_available':num_instances_available,'num_authors':num_authors}
 #     )
+
+class AuthorListView(generic.ListView):
+    model=Author
+    template_name='catalog/author_list.html'
